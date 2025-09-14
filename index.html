@@ -2171,6 +2171,17 @@ nav.scrolled .nav-menu a:hover {
     margin: 40px 0;
 }
 
+/* Change logo and burger menu to black when scrolled */
+nav.scrolled .logo img {
+    filter: brightness(0) saturate(100%);
+    transition: filter 0.3s ease;
+}
+
+nav.scrolled .burger-menu span {
+    background: #000;
+    transition: all 0.3s ease;
+}
+
 .disclaimer-content {
     display: flex;
     align-items: flex-start;
@@ -3538,7 +3549,7 @@ body.menu-open {
                     <h4>Rechtliches</h4>
                     <ul>
                         <li><a href="/impressum">Impressum</a></li>
-                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="/datenschutz">Datenschutz</a></li>
                     </ul>
                 </div>
                 <!-- <div class="footer-column">
