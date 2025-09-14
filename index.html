@@ -3771,6 +3771,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Animate back in
             formWrapper.style.opacity = '1';
             formWrapper.style.transform = 'scale(1)';
+
+           setTimeout(() => {
+formWrapper.scrollIntoView({ 
+    behavior: 'smooth', 
+    block: 'center' 
+});
+           }, 50)
             
         }, 500);
     }
